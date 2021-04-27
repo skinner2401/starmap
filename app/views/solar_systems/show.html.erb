@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @solar_system.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @solar_system.description %>
+</p>
+
+<p>
+  <strong>Galaxy:</strong>
+  <%= @solar_system.galaxy_id %>
+</p>
+
+<%= link_to 'Edit', edit_solar_system_path(@solar_system) %> |
+<%= link_to 'Back', solar_systems_path %>
