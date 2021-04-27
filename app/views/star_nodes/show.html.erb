@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @star_node.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @star_node.description %>
+</p>
+
+<p>
+  <strong>North star:</strong>
+  <%= @star_node.north_star_id %>
+</p>
+
+<%= link_to 'Edit', edit_star_node_path(@star_node) %> |
+<%= link_to 'Back', star_nodes_path %>

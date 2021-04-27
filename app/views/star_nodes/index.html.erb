@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Star Nodes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>North star</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @star_nodes.each do |star_node| %>
+      <tr>
+        <td><%= star_node.name %></td>
+        <td><%= star_node.description %></td>
+        <td><%= star_node.north_star_id %></td>
+        <td><%= link_to 'Show', star_node %></td>
+        <td><%= link_to 'Edit', edit_star_node_path(star_node) %></td>
+        <td><%= link_to 'Destroy', star_node, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Star Node', new_star_node_path %>

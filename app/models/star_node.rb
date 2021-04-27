@@ -1,0 +1,2 @@
+class StarNode < ApplicationRecord
+end
