@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>North Stars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solar system</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Data source</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @north_stars.each do |north_star| %>
+      <tr>
+        <td><%= north_star.solar_system_id %></td>
+        <td><%= north_star.name %></td>
+        <td><%= north_star.description %></td>
+        <td><%= north_star.data_source %></td>
+        <td><%= link_to 'Show', north_star %></td>
+        <td><%= link_to 'Edit', edit_north_star_path(north_star) %></td>
+        <td><%= link_to 'Destroy', north_star, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New North Star', new_north_star_path %>

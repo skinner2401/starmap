@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Solar system:</strong>
+  <%= @north_star.solar_system_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @north_star.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @north_star.description %>
+</p>
+
+<p>
+  <strong>Data source:</strong>
+  <%= @north_star.data_source %>
+</p>
+
+<%= link_to 'Edit', edit_north_star_path(@north_star) %> |
+<%= link_to 'Back', north_stars_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  solar_system_id: 1
+  name: MyString
+  description: MyString
+  data_source: 1
+
+two:
+  solar_system_id: 1
+  name: MyString
+  description: MyString
+  data_source: 1
