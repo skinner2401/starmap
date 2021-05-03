@@ -5,4 +5,6 @@ class StarNode < ApplicationRecord
   has_many :blocking
   has_many :next
   has_many :previous
+  validates :name, presence: true
+  validates :description, presence: true
 end
