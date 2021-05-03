@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_064528) do
+ActiveRecord::Schema.define(version: 2021_05_03_070722) do
 
   create_table "galaxies", force: :cascade do |t|
     t.string "name"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_05_03_064528) do
     t.integer "data_source"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "is_black_hole"
   end
 
   create_table "solar_systems", force: :cascade do |t|
