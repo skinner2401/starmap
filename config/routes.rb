@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stargates
   resources :north_stars
   resources :star_nodes
   resources :solar_systems

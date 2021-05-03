@@ -1,0 +1,2 @@
+class Stargate < ApplicationRecord
+end

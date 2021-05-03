@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_070834) do
+ActiveRecord::Schema.define(version: 2021_05_03_071435) do
 
   create_table "galaxies", force: :cascade do |t|
     t.string "name"
@@ -41,6 +41,16 @@ ActiveRecord::Schema.define(version: 2021_05_03_070834) do
     t.string "name"
     t.string "description"
     t.integer "north_star_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "stargates", force: :cascade do |t|
+    t.boolean "automatic"
+    t.string "source"
+    t.integer "start_id"
+    t.integer "end_id"
+    t.boolean "blocking"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,42 @@
+<%= form_with(model: stargate) do |form| %>
+  <% if stargate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stargate.errors.count, "error") %> prohibited this stargate from being saved:</h2>
+
+      <ul>
+        <% stargate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :automatic %>
+    <%= form.check_box :automatic %>
+  </div>
+
+  <div class="field">
+    <%= form.label :source %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_id %>
+    <%= form.number_field :start_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_id %>
+    <%= form.number_field :end_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blocking %>
+    <%= form.check_box :blocking %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

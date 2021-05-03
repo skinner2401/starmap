@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Automatic:</strong>
+  <%= @stargate.automatic %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @stargate.source %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @stargate.start_id %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @stargate.end_id %>
+</p>
+
+<p>
+  <strong>Blocking:</strong>
+  <%= @stargate.blocking %>
+</p>
+
+<%= link_to 'Edit', edit_stargate_path(@stargate) %> |
+<%= link_to 'Back', stargates_path %>
