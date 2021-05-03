@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Original start:</strong>
+  <%= @stargate_manual_override.original_start_id %>
+</p>
+
+<p>
+  <strong>Original end:</strong>
+  <%= @stargate_manual_override.original_end_id %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @stargate_manual_override.start_id %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @stargate_manual_override.end_id %>
+</p>
+
+<p>
+  <strong>Bloacking:</strong>
+  <%= @stargate_manual_override.bloacking %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @stargate_manual_override.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @stargate_manual_override.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_stargate_manual_override_path(@stargate_manual_override) %> |
+<%= link_to 'Back', stargate_manual_overrides_path %>

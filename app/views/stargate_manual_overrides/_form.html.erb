@@ -1,0 +1,52 @@
+<%= form_with(model: stargate_manual_override) do |form| %>
+  <% if stargate_manual_override.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stargate_manual_override.errors.count, "error") %> prohibited this stargate_manual_override from being saved:</h2>
+
+      <ul>
+        <% stargate_manual_override.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :original_start_id %>
+    <%= form.number_field :original_start_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :original_end_id %>
+    <%= form.number_field :original_end_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_id %>
+    <%= form.number_field :start_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_id %>
+    <%= form.number_field :end_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bloacking %>
+    <%= form.check_box :bloacking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

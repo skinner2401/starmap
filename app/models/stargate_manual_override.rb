@@ -1,0 +1,2 @@
+class StargateManualOverride < ApplicationRecord
+end

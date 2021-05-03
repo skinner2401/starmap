@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stargate_manual_overrides
   resources :stargates
   resources :north_stars
   resources :star_nodes

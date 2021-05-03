@@ -1,0 +1,2 @@
+module StargateManualOverridesHelper
+end

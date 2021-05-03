@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_03_071435) do
+ActiveRecord::Schema.define(version: 2021_05_03_071819) do
 
   create_table "galaxies", force: :cascade do |t|
     t.string "name"
@@ -41,6 +41,18 @@ ActiveRecord::Schema.define(version: 2021_05_03_071435) do
     t.string "name"
     t.string "description"
     t.integer "north_star_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "stargate_manual_overrides", force: :cascade do |t|
+    t.integer "original_start_id"
+    t.integer "original_end_id"
+    t.integer "start_id"
+    t.integer "end_id"
+    t.boolean "bloacking"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

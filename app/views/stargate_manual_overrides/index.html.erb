@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Stargate Manual Overrides</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Original start</th>
+      <th>Original end</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Bloacking</th>
+      <th>Start date</th>
+      <th>End date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stargate_manual_overrides.each do |stargate_manual_override| %>
+      <tr>
+        <td><%= stargate_manual_override.original_start_id %></td>
+        <td><%= stargate_manual_override.original_end_id %></td>
+        <td><%= stargate_manual_override.start_id %></td>
+        <td><%= stargate_manual_override.end_id %></td>
+        <td><%= stargate_manual_override.bloacking %></td>
+        <td><%= stargate_manual_override.start_date %></td>
+        <td><%= stargate_manual_override.end_date %></td>
+        <td><%= link_to 'Show', stargate_manual_override %></td>
+        <td><%= link_to 'Edit', edit_stargate_manual_override_path(stargate_manual_override) %></td>
+        <td><%= link_to 'Destroy', stargate_manual_override, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Stargate Manual Override', new_stargate_manual_override_path %>

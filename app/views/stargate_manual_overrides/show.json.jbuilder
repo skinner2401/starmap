@@ -1,0 +1,1 @@
+json.partial! "stargate_manual_overrides/stargate_manual_override", stargate_manual_override: @stargate_manual_override

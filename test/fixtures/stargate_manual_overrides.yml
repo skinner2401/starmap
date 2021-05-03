@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  original_start_id: 1
+  original_end_id: 1
+  start_id: 1
+  end_id: 1
+  bloacking: false
+  start_date: 2021-05-03 00:18:19
+  end_date: 2021-05-03 00:18:19
+
+two:
+  original_start_id: 1
+  original_end_id: 1
+  start_id: 1
+  end_id: 1
+  bloacking: false
+  start_date: 2021-05-03 00:18:19
+  end_date: 2021-05-03 00:18:19
