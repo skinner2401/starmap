@@ -1,0 +1,2 @@
+class Ingester < ApplicationRecord
+end

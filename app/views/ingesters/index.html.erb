@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ingesters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ingesters.each do |ingester| %>
+      <tr>
+        <td><%= link_to 'Show', ingester %></td>
+        <td><%= link_to 'Edit', edit_ingester_path(ingester) %></td>
+        <td><%= link_to 'Destroy', ingester, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ingester', new_ingester_path %>

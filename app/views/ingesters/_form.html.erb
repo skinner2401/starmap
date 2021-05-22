@@ -1,0 +1,17 @@
+<%= form_with(model: ingester) do |form| %>
+  <% if ingester.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ingester.errors.count, "error") %> prohibited this ingester from being saved:</h2>
+
+      <ul>
+        <% ingester.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
